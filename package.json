@@ -1,27 +1,34 @@
 {
-  "name": "sample",
+  "name": "stacktest",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "lint": "./node_modules/.bin/eslint **/*.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/glowlex/test.git"
-  },
+},
   "engines": {
-    "node": "6.3.1"
+    "node": "6.5.0"
   },
   "keywords": [],
   "author": "",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-	"technolibs": "1.1.0",
-    "json-schema-mock": "0.0.8"
+    "body-parser": "^1.15.*",
+    "express": "^4.14.*",
+    "technolibs": "1.1.0",
+    "technologger": "1.0.*",
+    "json-schema-mock": "0.0.8",
+    "techno-gendoc": "0.4.1"
   },
   "devDependencies": {
-	   "techno-gendoc": "0.3.0"
-   }
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.2.2"
+  }
 }
