@@ -1,11 +1,7 @@
 let assert = require('assert');
 let hello = require('./public/main').hello;
-let filter = require('./public/main').filter;
+let filter = require('./public/lib/main').filter;
 
 
-//assert.equal(filter('orange'), '******');
-//assert.equal(filter('orange sadfsadf'), '****** sadfsadf');
-
-global.window = {
-rules: null
-}
+assert.equal(filter('orange', ['orange']), '******');
+assert.equal(filter('orange sadfsadf', ['orange']), '****** sadfsadf');
