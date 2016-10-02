@@ -5,7 +5,7 @@ node_js:
 deploy:
   provider: heroku
   api_key:
-    secure: 20552660-2db7-4e07-bad9-912d99e3cc2b
+    secure:20552660-2db7-4e07-bad9-912d99e3cc2b
   app:
-  stack_test4
+  master: stacktest4
   all_branches: true
