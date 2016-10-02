@@ -4,7 +4,7 @@
 	function filter(str, rules){
 	rules = rules.map(rule => {
 		return {
-			regexp: RegExp('\\b+rule+\\b', 'gi'),
+			regexp: RegExp('\\b'+rule+'\\b', 'gi'),
 			length: rule.length
 		};
 				
